@@ -17,7 +17,7 @@ function Mascotas() {
      });
  }, []);
 
- return (
+  return (
    <div className="container">
      <h2 className="mt-2">Listado de mascotas</h2>
      <hr></hr>
@@ -29,7 +29,7 @@ function Mascotas() {
        ))}
      </Row>
    </div>
- );
+  );
 }
 
 export default Mascotas;

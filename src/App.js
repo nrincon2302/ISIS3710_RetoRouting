@@ -5,7 +5,7 @@ import Mascotas from "./components/mascotas";
 import NavBar from "./components/navbar";
 
 function App() {
- return (
+  return (
    <div className="App">
      <NavBar></NavBar>
      <BrowserRouter>
@@ -16,7 +16,7 @@ function App() {
        </Routes>
      </BrowserRouter>
    </div>
- );
+  );
 }
 
 export default App;

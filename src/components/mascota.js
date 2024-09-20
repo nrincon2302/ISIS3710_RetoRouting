@@ -2,7 +2,13 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
 function Mascota(props) {
- return (
+
+  const handleClick = () => {
+    console.log(props.mascota);
+    return props.mascota;
+  };
+
+  return (
    <Card style={{ width: "18rem", height: "24rem" }} className="mb-3">
      <Card.Img
        style={{ height: "14rem" }}
@@ -12,14 +18,14 @@ function Mascota(props) {
      />
      <Card.Body>
        <Card.Title>
-         <Link to={"/mascotas/" + props.mascota.id} >
+         <Link to={"/mascotas/" + props.mascota.id} onClick={handleClick}>
            {props.mascota.nombre}
          </Link>
        </Card.Title>
        <Card.Text>{props.mascota.descripcion}</Card.Text>
      </Card.Body>
    </Card>
- );
+  );
 }
 
 export default Mascota;
